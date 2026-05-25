@@ -1,6 +1,6 @@
 #labelforsetting,
 #labelforvisualmode,
-#switchforvisualmode:checked + #labelforvisualmode {
+#switchforvisualmode:checked+#labelforvisualmode {
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -243,7 +243,7 @@ html {
   display: none;
 }
 
-#switchforsetting:checked + #labelforsetting {
+#switchforsetting:checked+#labelforsetting {
   transform: rotate(180deg);
   transition-duration: 0.5s;
 }
@@ -258,7 +258,7 @@ html {
   cursor: pointer;
 }
 
-#switchforvisualmode:checked + #labelforvisualmode {
+#switchforvisualmode:checked+#labelforvisualmode {
   transform: rotate(360deg);
   transition-duration: 0.5s;
   background-image: url(image/assets/sun.png);
@@ -301,7 +301,7 @@ html {
   transition-duration: 0.5s;
 }
 
-#switchforsound:checked + #labelforsound {
+#switchforsound:checked+#labelforsound {
   transition-duration: 0.5s;
   background-image: url(image/assets/sound_icon.svg);
   background-size: 50%;
@@ -336,13 +336,11 @@ noscript {
 
 #name,
 .getintouch-heading article {
-  background: -webkit-linear-gradient(
-    135deg,
-    var(--color-light-blue),
-    var(--color-light-purple),
-    var(--color-light-blue),
-    var(--color-light-purple)
-  );
+  background: -webkit-linear-gradient(135deg,
+      var(--color-light-blue),
+      var(--color-light-purple),
+      var(--color-light-blue),
+      var(--color-light-purple));
   -webkit-text-fill-color: transparent;
 }
 
@@ -360,11 +358,9 @@ noscript {
 }
 
 .navbar {
-  background-image: linear-gradient(
-    to bottom right,
-    var(--tech-stack-box-first-color),
-    var(--tech-stack-box-second-color)
-  );
+  background-image: linear-gradient(to bottom right,
+      var(--tech-stack-box-first-color),
+      var(--tech-stack-box-second-color));
   backdrop-filter: blur(10px);
   height: 80px;
   width: 80%;
@@ -611,6 +607,7 @@ noscript {
 }
 
 @-webkit-keyframes vibrate-1 {
+
   0%,
   100% {
     -webkit-transform: translate(0);
@@ -639,6 +636,7 @@ noscript {
 }
 
 @keyframes vibrate-1 {
+
   0%,
   100% {
     -webkit-transform: translate(0);
@@ -668,13 +666,11 @@ noscript {
 
 #name {
   align-items: flex-start;
-  background: linear-gradient(
-    -45deg,
-    var(--color-light-blue),
-    var(--color-light-purple),
-    var(--color-light-blue),
-    var(--color-light-purple)
-  );
+  background: linear-gradient(-45deg,
+      var(--color-light-blue),
+      var(--color-light-purple),
+      var(--color-light-blue),
+      var(--color-light-purple));
   background-clip: text;
   -webkit-background-clip: text;
   background-size: 400% 400%;
@@ -683,6 +679,7 @@ noscript {
 }
 
 @keyframes gradient {
+
   0%,
   100% {
     background-position: 0 50%;
@@ -726,6 +723,7 @@ noscript {
 }
 
 @-webkit-keyframes jello-vertical {
+
   0%,
   100% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -759,6 +757,7 @@ noscript {
 }
 
 @keyframes jello-vertical {
+
   0%,
   100% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -891,18 +890,14 @@ noscript {
 .sectionHeadingP,
 .skills-heading-article,
 .skillsHeadingP {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    var(--static-heading-gradient-blue),
-    var(--static-heading-gradient-pink)
-  );
-  background-image: -webkit-linear-gradient(
-    left,
-    var(--static-heading-gradient-blue),
-    var(--static-heading-gradient-pink)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      var(--static-heading-gradient-blue),
+      var(--static-heading-gradient-pink));
+  background-image: -webkit-linear-gradient(left,
+      var(--static-heading-gradient-blue),
+      var(--static-heading-gradient-pink));
 }
 
 .sign {
@@ -981,11 +976,9 @@ noscript {
   font-size: 3rem;
   font-family: fira code;
   font-weight: 500;
-  background-image: linear-gradient(
-    90deg,
-    var(--static-heading-gradient-blue),
-    var(--static-heading-gradient-pink)
-  );
+  background-image: linear-gradient(90deg,
+      var(--static-heading-gradient-blue),
+      var(--static-heading-gradient-pink));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -996,11 +989,9 @@ noscript {
 .skillsHeadingP {
   width: 300px;
   height: 1px;
-  background-image: linear-gradient(
-    90deg,
-    var(--static-heading-gradient-blue),
-    var(--static-heading-gradient-pink)
-  );
+  background-image: linear-gradient(90deg,
+      var(--static-heading-gradient-blue),
+      var(--static-heading-gradient-pink));
 }
 
 .info-dp-section {
@@ -1059,23 +1050,17 @@ noscript {
   font-weight: 900;
   height: 100px;
   letter-spacing: 5px;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    var(--static-heading-gradient-blue),
-    var(--static-heading-gradient-pink)
-  );
-  background-image: -webkit-linear-gradient(
-    left,
-    var(--static-heading-gradient-blue),
-    var(--static-heading-gradient-pink)
-  );
-  background-image: linear-gradient(
-    90deg,
-    var(--static-heading-gradient-blue),
-    var(--static-heading-gradient-pink)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      var(--static-heading-gradient-blue),
+      var(--static-heading-gradient-pink));
+  background-image: -webkit-linear-gradient(left,
+      var(--static-heading-gradient-blue),
+      var(--static-heading-gradient-pink));
+  background-image: linear-gradient(90deg,
+      var(--static-heading-gradient-blue),
+      var(--static-heading-gradient-pink));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1083,11 +1068,9 @@ noscript {
 
 .project-box,
 .tech-stack-box {
-  background-image: linear-gradient(
-    to bottom right,
-    var(--tech-stack-box-first-color),
-    var(--tech-stack-box-second-color)
-  );
+  background-image: linear-gradient(to bottom right,
+      var(--tech-stack-box-first-color),
+      var(--tech-stack-box-second-color));
 }
 
 .tech-stack-wrapper {
@@ -1145,11 +1128,9 @@ noscript {
   position: absolute;
   top: -20px;
   opacity: 0;
-  background: linear-gradient(
-    to bottom right,
-    var(--tech-stack-box-first-color),
-    var(--tech-stack-box-second-color)
-  );
+  background: linear-gradient(to bottom right,
+      var(--tech-stack-box-first-color),
+      var(--tech-stack-box-second-color));
   border: 1px solid var(--tech-stack-box-border-color);
   padding: 5px 10px;
   border-radius: 5px;
@@ -1181,11 +1162,22 @@ footer {
 .project-boxes-div {
   width: 100%;
   height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 40px 20px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 30px;
+  padding: 40px 0;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.certificate-boxes-div {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+  padding: 40px 0;
+  align-items: stretch;
   box-sizing: border-box;
 }
 
@@ -1198,10 +1190,10 @@ footer {
 .project-box {
   width: 100%;
   min-height: 400px;
-  height: auto;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: stretch;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 20px;
@@ -1217,14 +1209,14 @@ footer {
 }
 
 .info-div {
-  width: 50%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
-  padding: 40px;
+  gap: 15px;
+  padding: 30px;
   flex: 1;
 }
 
@@ -1238,15 +1230,17 @@ footer {
 }
 
 .image-div {
-  width: 50%;
-  height: 100%;
-  min-height: 400px;
+  width: 100%;
+  height: 250px;
+  min-height: 200px;
   padding: 0;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  order: -1;
+  border-bottom: 1px solid var(--tech-stack-box-border-color);
 }
 
 .image-div img {
@@ -1254,6 +1248,22 @@ footer {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .image-div {
+    height: 200px;
+    min-height: 200px;
+  }
+
+  .info-div {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .ProjectHeading {
+    font-size: 2rem;
+  }
 }
 
 .project-box:hover .image-div img {
@@ -1473,13 +1483,11 @@ footer {
 
 .getintouch-heading article {
   font-size: 2rem;
-  background: linear-gradient(
-    -45deg,
-    var(--color-light-blue),
-    var(--color-light-purple),
-    var(--color-light-blue),
-    var(--color-light-purple)
-  );
+  background: linear-gradient(-45deg,
+      var(--color-light-blue),
+      var(--color-light-purple),
+      var(--color-light-blue),
+      var(--color-light-purple));
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 700;
@@ -1663,6 +1671,7 @@ footer {
 }
 
 @media screen and (max-width: 998px) {
+
   #hamburger-button,
   .hamburger {
     background-color: transparent;
@@ -2248,11 +2257,163 @@ footer {
     width: 50px;
     height: 50px;
   }
+}
 
-  .logos {
-    gap: 20px;
+/* --- Experience Timeline Styles --- */
+.experience-section-container {
+  padding-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  margin-top: 60px;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-light-blue), var(--color-light-purple));
+  box-shadow: 0 0 10px var(--color-light-purple);
+  border-radius: 10px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 60px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  width: 20px;
+  height: 20px;
+  background: var(--color-dark-mode);
+  border: 4px solid var(--color-light-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-light-blue);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--color-light-purple);
+  border-color: var(--color-white);
+  box-shadow: 0 0 15px var(--color-light-purple);
+}
+
+.timeline-content {
+  background: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid var(--tech-stack-box-border-color);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateY(-5px);
+  border-color: var(--color-light-purple);
+  box-shadow: 0 10px 30px rgba(128, 0, 255, 0.15);
+}
+
+.timeline-title {
+  color: var(--color-white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.timeline-company {
+  color: var(--color-light-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.timeline-date {
+  color: var(--color-gray);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-family: fira code;
+}
+
+.timeline-desc {
+  color: var(--color-ddd-color);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.timeline-list {
+  color: var(--color-ddd-color);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.timeline-list li {
+  margin-bottom: 8px;
+}
+
+.timeline-list li::marker {
+  color: var(--color-light-purple);
+}
+
+@media (max-width: 768px) {
+
+  .experience-section,
+  .about-section,
+  .skills-section,
+  .projects-section-div {
+    width: 90%;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-dot {
+    left: 1px;
+  }
+
+  .project-boxes-div,
+  .certificate-boxes-div {
+    grid-template-columns: 1fr;
   }
 }
+
+.logos {
+  gap: 20px;
+}
+
 
 @media only screen and (max-width: 1300px) and (max-height: 730px) {
   .landing-page-container {
@@ -2262,7 +2423,7 @@ footer {
 }
 
 .certificates-section-container {
-  padding: 150px 0;
+  padding: 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2329,7 +2490,8 @@ footer {
   align-items: center;
   justify-content: center;
   position: relative;
-  border: 3px solid #8000ff; /* Satu frame ungu */
+  border: 3px solid #8000ff;
+  /* Satu frame ungu */
   border-radius: 10px;
   overflow: hidden;
 }
@@ -2361,6 +2523,7 @@ footer {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -2370,7 +2533,9 @@ footer {
 .info-dp-section {
   animation: slideInFromBottom 0.6s ease-out;
 }
+
 @-webkit-keyframes vibrate-1 {
+
   0%,
   100% {
     -webkit-transform: translate(0);
