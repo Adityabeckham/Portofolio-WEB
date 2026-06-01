@@ -366,7 +366,7 @@ noscript {
   width: 80%;
   padding: 0 20px;
   justify-content: space-between;
-  z-index: 999;
+  z-index: 99999;
   border: 1px solid var(--color-navbarBorder-dark);
   border-radius: 50px;
 }
@@ -393,7 +393,7 @@ noscript {
   display: flex;
   list-style: none;
   justify-content: flex-end;
-  gap: 80px;
+  gap: 30px;
   color: var(--color-white);
 }
 
@@ -482,9 +482,8 @@ noscript {
 
 .logo-top {
   height: 100%;
-  justify-content: center;
-  transform-origin: bottom;
   position: relative;
+  transform-origin: bottom;
 }
 
 .activeThistab:before,
@@ -579,7 +578,8 @@ noscript {
 .text-content {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
+  max-width: 1200px;
   height: 100%;
   align-items: flex-start;
   justify-content: center;
@@ -954,7 +954,8 @@ noscript {
 .about-section,
 .projects-section-div,
 .skills-section {
-  width: 60%;
+  width: 80%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1250,21 +1251,6 @@ footer {
   transition: transform 0.4s ease;
 }
 
-@media (max-width: 768px) {
-  .image-div {
-    height: 200px;
-    min-height: 200px;
-  }
-
-  .info-div {
-    padding: 20px;
-    gap: 10px;
-  }
-
-  .ProjectHeading {
-    font-size: 2rem;
-  }
-}
 
 .project-box:hover .image-div img {
   transform: scale(1.05);
@@ -1398,6 +1384,7 @@ footer {
 .footer-background {
   width: 100%;
   height: 100vh;
+  min-height: 500px;
   background-color: #0b0b0b;
   display: flex;
   align-items: flex-end;
@@ -1416,9 +1403,11 @@ footer {
 
 .footer-foreground {
   position: absolute;
+  margin-top: 50px;
   top: 0;
   width: 100%;
   height: 100vh;
+  min-height: 500px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1642,11 +1631,11 @@ footer {
   .skills-section,
   .text-content,
   .certificates-section-container .projects-section-div {
-    width: 80%;
+    width: 85%;
   }
 
   .about-section {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1710,7 +1699,7 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    z-index: 9998;
+    z-index: 999999;
   }
 
   .activeThismobiletab:before,
@@ -1777,7 +1766,7 @@ footer {
 
   .mobiletogglemenu {
     background-color: transparent;
-    z-index: 9990;
+    z-index: 999998;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -1855,7 +1844,7 @@ footer {
 
   .projects-section-div,
   .certificates-section-container .projects-section-div {
-    width: 85%;
+    width: 90%;
   }
 
   .project-boxes-div {
@@ -1923,7 +1912,7 @@ footer {
 
   .text-content {
     padding-left: 0;
-    width: 80%;
+    width: 90%;
   }
 
   #hello-friend {
@@ -2270,7 +2259,8 @@ footer {
 }
 
 .experience-section {
-  width: 60%;
+  width: 80%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2383,13 +2373,49 @@ footer {
   color: var(--color-light-purple);
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 1200px) {
   .experience-section,
   .about-section,
   .skills-section,
-  .projects-section-div {
+  .projects-section-div,
+  .certificates-section-container .projects-section-div {
+    width: 85%;
+  }
+}
+
+@media (max-width: 998px) {
+  .experience-section,
+  .about-section,
+  .skills-section,
+  .projects-section-div,
+  .certificates-section-container .projects-section-div {
     width: 90%;
+  }
+
+  .timeline-content {
+    padding: 25px;
+  }
+
+  .timeline-title {
+    font-size: 2rem;
+  }
+
+  .timeline-company {
+    font-size: 1.5rem;
+  }
+
+  .timeline-list {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section,
+  .about-section,
+  .skills-section,
+  .projects-section-div,
+  .certificates-section-container .projects-section-div {
+    width: 92%;
   }
 
   .timeline::before {
@@ -2398,20 +2424,113 @@ footer {
 
   .timeline-item {
     padding-left: 40px;
+    margin-bottom: 30px;
   }
 
   .timeline-dot {
     left: 1px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .timeline-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline-company {
+    font-size: 1.3rem;
+  }
+
+  .timeline-date {
+    font-size: 1.2rem;
+  }
+
+  .timeline-desc {
+    font-size: 1.3rem;
+  }
+
+  .timeline-list {
+    font-size: 1.3rem;
+    padding-left: 15px;
   }
 
   .project-boxes-div,
   .certificate-boxes-div {
     grid-template-columns: 1fr;
   }
+
+  .experience-section-container,
+  .projects-section-container {
+    padding-top: 80px;
+  }
+
+  .about-section-container {
+    padding-top: 100px;
+  }
+
+  .skills-section-container {
+    padding-top: 80px;
+  }
 }
 
-.logos {
-  gap: 20px;
+@media (max-width: 500px) {
+  .experience-section,
+  .about-section,
+  .skills-section,
+  .projects-section-div,
+  .certificates-section-container .projects-section-div {
+    width: 95%;
+  }
+
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    padding-left: 35px;
+    margin-bottom: 25px;
+  }
+
+  .timeline-dot {
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-width: 3px;
+  }
+
+  .timeline-content {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .timeline-title {
+    font-size: 1.6rem;
+  }
+
+  .timeline-company {
+    font-size: 1.2rem;
+  }
+
+  .timeline-date {
+    font-size: 1.1rem;
+  }
+
+  .timeline-desc {
+    font-size: 1.2rem;
+  }
+
+  .timeline-list {
+    font-size: 1.2rem;
+    padding-left: 12px;
+  }
+
+  .timeline-list li {
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -2423,7 +2542,7 @@ footer {
 }
 
 .certificates-section-container {
-  padding: 15px 0;
+  padding: 100px 0 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2431,26 +2550,12 @@ footer {
 }
 
 .certificates-section-container .projects-section-div {
-  width: 60%;
+  width: 80%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.certificates-section-container .project-boxes-div {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 40px 20px;
-  width: 100%;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.certificates-section-container .project-box-wrapper {
-  width: 100%;
-  max-width: 1200px;
 }
 
 .section-heading {
@@ -2465,7 +2570,7 @@ footer {
 
 /* Layout untuk container about */
 .about-section-container {
-  padding: 60px 20px;
+  padding: 150px 20px 60px;
 }
 
 .info-dp-section {
